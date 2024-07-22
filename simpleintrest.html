@@ -1,0 +1,39 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="simpleintrest.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1 id="A">SIMPLE INTREST</h1>
+    </center>
+    <center>
+    <label class="B">enter p value</label>
+    <input type="number" id="C">
+    <br>
+    <label class="B">enter t value</label>
+    <input type="number" id="D">
+    <br>
+    <label class="B">enter r value</label>
+    <input type="number" id="E">
+    <br>
+    <button type="button" onclick="simple()" id="F">click</button>
+    <p id="si"></p>
+    </center>
+    <script>
+        function simple()
+        {
+            let p=parseFloat(document.getElementById("C").value);
+            let t=parseFloat(document.getElementById("D").value);
+            let r=parseFloat(document.getElementById("E").value);
+            let simple;
+                simple=(p*t*r)/100;
+            document.getElementById("si").innerHTML="simple intrest is"+simple;
+        }
+    </script>
+</body>
+</html>
